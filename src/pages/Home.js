@@ -1,9 +1,8 @@
 import React, { useState, createContext } from "react";
-import ReactPlayer from "react-player";
 import styled from "styled-components";
 import Background from "../components/Background";
 import Overlay from "../components/Overlay";
-
+import Error from "../components/Error";
 export const URLContext = createContext();
 
 function Home() {
@@ -13,6 +12,7 @@ function Home() {
       <Container>
         <Background url={url} />
         <Overlay />
+        <Error />
       </Container>
     </URLContext.Provider>
   );
